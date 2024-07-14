@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h1>Nature Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1522281251585-9f7f5e43b52e')">
+            <img src="https://images.unsplash.com/photo-1522281251585-9f7f5e43b52e" alt="Nature 1">
+        </div>
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1461319951965-1e6d4bfc1b52')">
+            <img src="https://images.unsplash.com/photo-1461319951965-1e6d4bfc1b52" alt="Nature 2">
+        </div>
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1517991131181-5aef0e7d6576')">
+            <img src="https://images.unsplash.com/photo-1517991131181-5aef0e7d6576" alt="Nature 3">
+        </div>
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0')">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Nature 4">
+        </div>
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1501593468602-8e6e6c15c8bb')">
+            <img src="https://images.unsplash.com/photo-1501593468602-8e6e6c15c8bb" alt="Nature 5">
+        </div>
+        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0')">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Nature 6">
+        </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption" class="caption"></div>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="img.js"></script>
+</body>
+</html>
